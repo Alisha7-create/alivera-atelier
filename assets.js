@@ -1,0 +1,1 @@
+window.ALIVERA_ASSETS={};

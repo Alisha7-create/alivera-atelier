@@ -1,0 +1,30 @@
+[auth]
+enabled = true
+providers = ["email"]
+
+[[secret]]
+key = "RAZORPAY_KEY_ID"
+expose = true
+
+[[secret]]
+key = "RAZORPAY_KEY_SECRET"
+expose = true
+
+[[secret]]
+key = "RESEND_API_KEY"
+expose = true
+
+[db.tables.customer_addresses]
+read = "own"
+write = "own"
+
+[db.tables.customer_profiles]
+read = "own"
+write = "own"
+
+[db.tables.orders]
+read = "own"
+write = "own"
+
+[build]
+entry = "public/index.html"
